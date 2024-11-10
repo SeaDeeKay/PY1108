@@ -101,31 +101,123 @@
 
 # --- feladatok 01 / 13 (bankjegy) ---------
 
-print('Bankjegyautomata')
-print(' ')
-print('A legkisebb címlet 1000 Ft, a maximálisan felvehető összeg 300 000 Ft.')
-print(' ')
+# print('Bankjegyautomata')
+# print(' ')
+# print('A legkisebb címlet 1000 Ft, a maximálisan felvehető összeg 300 000 Ft.')
+# print(' ')
 
-osszeg = int(input('Adja meg mekkora összeget kíván felvenni! '))
+# osszeg = int(input('Adja meg mekkora összeget kíván felvenni! '))
 
-print(' ')
-print('A kiadott bankjegyek:')
-print(' ')
+# print(' ')
+# print('A kiadott bankjegyek:')
+# print(' ')
 
-if (osszeg % 10000) == 0:
-    print(f'{osszeg / 10000} * 10 000 = {osszeg}')
-elif (osszeg % 10000) != 0 and ((osszeg % 10000) % 5000) == 0:
-    print(f'{osszeg // 10000} * 10 000 = {(osszeg // 10000) * 10000}')
-    print(f'{(osszeg % 10000) / 5000} * 5000 = {(osszeg % 10000)}')
-elif (osszeg % 10000) != 0 and (osszeg % 5000) != 0 and (osszeg % 1000) == 0:
-    print(f' {osszeg // 10000} * 10 000 = {(osszeg // 10000) * 10000}')
-    print(f' {(osszeg % 10000) // 5000} * 5 000 = {((osszeg % 10000) // 5000) * 5000}')
-    print(f' {round((osszeg % 5000) / 1000)} * 1 000 = {osszeg % 5000}')
-elif (osszeg % 10000) != 0 and (osszeg % 5000) != 0 and (osszeg % 1000) != 0:
-    print('A legkisebb felvehető összeg 1000 Ft!')
+# if (osszeg % 10000) == 0:
+#     print(f'{osszeg / 10000} * 10 000 = {osszeg}')
+# elif (osszeg % 10000) != 0 and ((osszeg % 10000) % 5000) == 0:
+#     print(f'{osszeg // 10000} * 10 000 = {(osszeg // 10000) * 10000}')
+#     print(f'{(osszeg % 10000) / 5000} * 5000 = {(osszeg % 10000)}')
+# elif (osszeg % 10000) != 0 and (osszeg % 5000) != 0 and (osszeg % 1000) == 0:
+#     print(f' {osszeg // 10000} * 10 000 = {(osszeg // 10000) * 10000}')
+#     print(f' {(osszeg % 10000) // 5000} * 5 000 = {((osszeg % 10000) // 5000) * 5000}')
+#     print(f' {round((osszeg % 5000) / 1000)} * 1 000 = {osszeg % 5000}')
+# elif (osszeg % 10000) != 0 and (osszeg % 5000) != 0 and (osszeg % 1000) != 0:
+#     print('A legkisebb felvehető összeg 1000 Ft!')
 
-print(' ')
-if (osszeg % 10000) == 0 or (osszeg % 5000) == 0 or (osszeg % 1000) == 0:
-    print(f'Összeg: {osszeg} Ft')
-elif (osszeg % 10000) != 0 and (osszeg % 5000) != 0 and (osszeg % 1000) != 0:
-    print ('Összeg: 0 Ft')
+# print(' ')
+# if (osszeg % 10000) == 0 or (osszeg % 5000) == 0 or (osszeg % 1000) == 0:
+#     print(f'Összeg: {osszeg} Ft')
+# elif (osszeg % 10000) != 0 and (osszeg % 5000) != 0 and (osszeg % 1000) != 0:
+#     print ('Összeg: 0 Ft')
+
+# --- feladatok 01 / 14 (utazasikoltseg) ---------
+
+# print('Utazási költségtérítés')
+# print()
+
+# ut = float(input('Add meg a megtett utat km-ben! '))
+# fogyasztas = float(input('Add meg az autó fogyasztását 100 km-re literben! '))
+# ar = float(input('Add meg az üzemanyagárat ft-ban! '))
+# kt = (ut * fogyasztas * ar) / 100
+
+# if ut > 100:
+#     print(f'Költségtérítés: {kt + ut * 25} ft')
+# else:
+#     print(f'Költségtérítés: {(ut * fogyasztas * ar) / 100} ft.')
+
+# --- feladatok 01 / 18 (paritas) ---------
+
+# szam = int(input('Adj meg egy egész számot! '))
+
+# if szam % 2 == 0:
+#     print('A szám páros.')
+# else:
+#     print('A szám páratlan.')
+
+# --- feladatok 01 / 20 (elojel) ---------
+
+# szam = int(input('Adj meg egy egész számot! '))
+
+# if szam < 0:
+#     print('A szám negatív.')
+# elif szam > 0:
+#     print('A szám pozitív.')
+# else:
+#     print('A szám 0.')
+
+# --- feladatok 01 / 23 ---------
+
+# pontszam = int(input('Írd be a pontszámodat! '))
+
+# if 100 > pontszam > 88:
+#     print('jeles')
+# elif pontszam > 73:
+#     print('jó')
+# elif pontszam > 58:
+#     print('közepes')
+# elif pontszam > 43:
+#     print('elégséges')
+# elif pontszam > 0:
+#     print('elégtelen')
+# else:
+#     print('Ilyen pontszámod biztosan nem volt!')
+
+# --- feladatok 01 / 28 (honapok) ---------
+
+# honap = int(input('Add meg a hónap sorszámát! '))
+
+# if honap == 1:
+#     print('Január')
+# elif honap == 2:
+#     print('Február')
+# elif honap == 3:
+#     print('Március')
+# elif honap == 4:
+#     print('Április')
+# elif honap == 5:
+#     print('Május')
+# elif honap == 6:
+#     print('Június')
+# elif honap == 7:
+#     print('Július')
+# elif honap == 8:
+#     print('Augusztus')
+# elif honap == 9:
+#     print('Szeptember')
+# elif honap == 10:
+#     print('Október')
+# elif honap == 11:
+#     print('November')
+# elif honap == 12:
+#     print('December')
+# else:
+#     print('Hibás adat!')
+
+# --- feladatok 01 / 30 (szokoev) ---------
+
+# ev = int(input('Adj meg egy évet! '))
+
+# if ev % 400 == 0 or ev % 4 == 0 and ev % 100 != 0:
+#     print('szökőév')
+# else:
+#     print('nem szökőév')
